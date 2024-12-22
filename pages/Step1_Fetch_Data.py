@@ -79,6 +79,7 @@ if st.session_state.data_source == "Static saved data":
     from_api = False
 elif st.session_state.data_source == "Fetch new data":
     from_api = True
+    ## TODO: add fred api input box
 
 fred_metrics_info_df, fred_metrics_df, stock_price_df = collect_data(from_api)
 

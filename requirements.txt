@@ -1,7 +1,7 @@
 fredapi==0.5.2
 holidays==0.63
 matplotlib==3.10.0
-numpy==2.2.1
+numpy<2
 pandas==2.2.3
 plotly==5.24.1
 python-dotenv==1.0.1
