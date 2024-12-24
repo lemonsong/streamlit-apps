@@ -20,7 +20,9 @@ class FredClass:
             print(f'Fetch metric: {metric}')
             try:
                 # TODO: confirm usage of realtime_start parameter
-                metrics_df_sub = self.fred.get_series_latest_release(metric, realtime_start= start_date.strftime("%Y-%m-%d")).to_frame()
+                # metrics_df_sub = self.fred.get_series_all_releases(metric, realtime_start= start_date.strftime("%Y-%m-%d")).to_frame()
+
+                metrics_df_sub = self.fred.get_series_latest_release(metric).to_frame()
                 metrics_df_sub['metric'] = metric
                 lst.append(metrics_df_sub)
             except ValueError:

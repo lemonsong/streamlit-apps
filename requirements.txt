@@ -11,5 +11,5 @@ seaborn==0.13.2
 statsmodels==0.14.4
 streamlit==1.24.0
 tensorflow==2.18.0
-#ydata_profiling==4.12.1
+#ydata_profiling==4.12.1 #requires matplotlib<3.10
 yfinance==0.2.51
